@@ -1,0 +1,8 @@
+# 1. On part de l’image officielle Ubuntu
+FROM ubuntu:latest
+
+# 2. On met à jour et on upgrade les paquets
+RUN apt-get update && apt-get upgrade -y
+
+# 3. Quand on lance le conteneur, il affiche Hello World
+CMD ["echo", "Hello, World!"]
