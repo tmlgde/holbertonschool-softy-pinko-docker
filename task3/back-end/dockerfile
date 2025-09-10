@@ -8,8 +8,6 @@ RUN apt-get update && apt-get upgrade -y && \
 RUN rm -f /usr/lib/python*/EXTERNALLY-MANAGED
 
 RUN pip3 install --no-cache-dir flask
-RUN pip3 install --no-cache-dir flask-cors
-
 
 WORKDIR /app
 COPY ./api.py /app/api.py
